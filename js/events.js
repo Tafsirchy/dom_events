@@ -27,3 +27,5 @@ const btnMakeBlue = document.getElementById("btn-make-blue");
       function makePurple() {
         document.body.style.backgroundColor = "purple";
       }
+      
+// option 4: add event listener

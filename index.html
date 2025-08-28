@@ -13,12 +13,18 @@
     <button onclick="console.log('k marli re?')">3rd Click</button>
     <input type="text" />
     <br />
-    <!-- option 2 for click event handler -->
+    <!-- option 2: get element by id and then set onclick event -->
     <button onclick="makeYellow()">Make Yellow</button>
     <button onclick="makeRed()">Make Red</button>
     <br />
+    <!-- option 3: differenm version  -->
     <button id="btn-make-blue">Make Blue</button>
     <button id="btn-make-purple">Make Purple</button>
+    <!-- option 4: addEventListener  -->
+    <button id="btn-make-green">Make Green</button>
+
+    <button id="btn-make-orange">Orange</button>
+
     <script>
       // function makeYellow() {
       //   document.body.style.backgroundColor = "yellow";
@@ -41,6 +47,23 @@
       // function makePurple() {
       //   document.body.style.backgroundColor = "purple";
       // }
+
+      // getElementById.addEventListener
+
+      // document.getElementById('btn-make-green').addEventListener('click', function makeGreen(){})
+
+      document
+        .getElementById("btn-make-green")
+        .addEventListener("click", function makeGreen() {
+          // console.log("green button clicked");
+          document.body.style.backgroundColor = "green";
+        });
+
+      document
+        .getElementById("btn-make-orange")
+        .addEventListener("click", function () {
+          document.body.style.backgroundColor = "orange";
+        });
     </script>
     <script src="js/events.js"></script>
   </body>
