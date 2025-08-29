@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More events</title>
+  </head>
+  <body>
+    <button id="btn-mouse">Micky Mouse Minie</button>
+    <input id="user-name" placeholder="Enter your email" type="text" />
+    <input id="user-email" placeholder="Enter your Email" type="text" />
+    <script>
+      // mouseenter
+      //   document
+      //     .getElementById("btn-mouse")
+      //     .addEventListener("mouseenter", function () {
+      //       console.log("Mouse enter");
+      //     });
+
+      //   mousemove
+      //   document
+      //     .getElementById("btn-mouse")
+      //     .addEventListener("mousemove", function () {
+      //       console.log("Mouse enter");
+      //     });
+
+      //   mouseout
+      //   document
+      //     .getElementById("btn-mouse")
+      //     .addEventListener("mouseout", function () {
+      //       console.log("Mouse enter");
+      //     });
+
+      // focus
+      //   document
+      //     .getElementById("user-name")
+      //     .addEventListener("focus", function () {
+      //       console.log("User want to write name");
+      //     });
+      //   document
+      //     .getElementById("user-email")
+      //     .addEventListener("focus", function () {
+      //       console.log("User want to write email");
+      //     });
+
+      //   blur
+      //   document
+      //     .getElementById("user-name")
+      //     .addEventListener("blur", function () {
+      //       console.log("User done with name");
+      //     });
+      //   document
+      //     .getElementById("user-email")
+      //     .addEventListener("blur", function () {
+      //       console.log("User done with email");
+      //     });
+
+      //   keydown
+      //   document
+      //     .getElementById("user-name")
+      //     .addEventListener("keydown", function () {
+      //       console.log("Typing");
+      //     });
+
+      // keydown+event
+      //   document
+      //     .getElementById("user-name")
+      //     .addEventListener("keydown", function (event) {
+      //       //   console.log("Typing", event);
+      //       //   console.log("Typing", event.key);
+      //       //   console.log("Typing", event.keyCode);
+      //       //   console.log("Typing", event.target);
+      //       console.log("Typing", event.target.value);
+      //     });
+
+      //   keyup + event;
+      document
+        .getElementById("user-name")
+        .addEventListener("keyup", function (event) {
+          //   console.log("Typing", event);
+          //   console.log("Typing", event.key);
+          //   console.log("Typing", event.keyCode);
+          //   console.log("Typing", event.target);
+          console.log("Typing", event.target.value);
+        });
+    </script>
+  </body>
+</html>
